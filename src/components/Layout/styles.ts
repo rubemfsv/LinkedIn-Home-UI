@@ -3,12 +3,18 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-
+  
+  .left-column,
+  .right-column,
+  .ad-banner {
+    display: none;
+  }
+  
   > span {
     margin-top: 48px;
     display: flex;
   }
-
+  
   @media (min-width: 1180px) {
     > span {
       margin-top: 52px;
@@ -19,21 +25,14 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
     }
-    
+  
     .left-column,
     .right-column,
     .ad-banner {
       display: unset;
     }
-
     .middle-column {
       margin: 0 25px 16px;
     }
-  }
-
-  .left-column,
-  .right-column,
-  .ad-banner {
-    display: none;
   }
 `;
